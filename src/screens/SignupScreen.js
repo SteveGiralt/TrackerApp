@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import {
   StyleSheet,
   View,
@@ -11,12 +11,7 @@ import NavLink from "../components/NavLink";
 import { Context as AuthContext } from "../context/AuthContext";
 
 const SignupScreen = () => {
-  const { state, signup, clearErrorMessage, tryLocalSignin } =
-    useContext(AuthContext);
-
-  useEffect(() => {
-    tryLocalSignin();
-  }, []);
+  const { state, signup, clearErrorMessage } = useContext(AuthContext);
 
   return (
     <KeyboardAvoidingView>
