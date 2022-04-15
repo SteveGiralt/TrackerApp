@@ -11,7 +11,11 @@ const Map = () => {
   if (!currentLocation) {
     return (
       <View>
-        <ActivityIndicator size="large" style={styles.activityIndicator} />
+        <ActivityIndicator
+          size="large"
+          color="#32CD32"
+          style={styles.activityIndicator}
+        />
       </View>
     );
   } else {

@@ -33,6 +33,10 @@ const switchNavigator = createSwitchNavigator({
   }),
 });
 
+switchNavigator.defaultProps = {
+  headerMode: "none",
+};
+
 const styles = StyleSheet.create({});
 
 const App = createAppContainer(switchNavigator);
